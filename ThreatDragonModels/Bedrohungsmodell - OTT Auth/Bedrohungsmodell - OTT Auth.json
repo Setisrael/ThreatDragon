@@ -32,8 +32,8 @@
                 "text": "User"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -48,29 +48,15 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [
-                {
-                  "id": "77236673-b871-42cb-bfd2-8a164833799b",
-                  "title": "Spoofing Identity",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "Ein Angreifer könnte versuchen, sich als legitimer Benutzer auszugeben und Zugriff auf das System zu erhalten, indem er falsche Anmeldeinformationen oder gefälschte Identitäten verwendet. Angriffsvektor: Phishing-Angriffe, gestohlene Anmeldeinformationen",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "Generic",
-                  "new": false,
-                  "number": 103,
-                  "score": ""
-                }
-              ],
-              "hasOpenThreats": true,
+              "threats": [],
+              "hasOpenThreats": false,
               "providesAuthentication": false
             }
           },
           {
             "position": {
               "x": 270.99999999999994,
-              "y": -10.999999999999936
+              "y": -25
             },
             "size": {
               "width": 130,
@@ -81,8 +67,8 @@
                 "text": "Login System -\nWebapp +\nMobile App"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -97,8 +83,35 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
-              "hasOpenThreats": false
+              "threats": [
+                {
+                  "id": "02578f22-e2db-4e62-bec4-85b11e361eab",
+                  "title": "New generic threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Ein Benutzer leugnet möglicherweise die Nutzung der OTT, was zu Schwierigkeiten bei der Überprüfung von Authentifizierungsvorgängen führen kann.\nCAPEC_ID:\nTaktik: Collectoin",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 114,
+                  "score": ""
+                },
+                {
+                  "id": "d135390b-0e9c-495d-bfdc-2ef5bee0285b",
+                  "title": "Spoofing indentity ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Ein Angreifer könnte versuchen, sich als legitimer Benutzer auszugeben und Zugriff auf das System zu erhalten, indem er falsche Anmeldeinformationen oder gefälschte Identitäten verwendet. Angriffsvektor: Phishing-Angriffe, gestohlene Anmeldeinformationen\nCAPEC_ID: 151\nTaktik: Credidential access",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 116,
+                  "score": ""
+                }
+              ],
+              "hasOpenThreats": true
             }
           },
           {
@@ -137,12 +150,12 @@
                   "title": "New generic threat",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
+                  "type": "Information disclosure",
+                  "description": "Angreifer könnte unverschlüsste daten(OTT) lesen",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
-                  "new": true,
-                  "number": 0,
+                  "new": false,
+                  "number": 109,
                   "score": ""
                 }
               ],
@@ -277,8 +290,8 @@
                 "text": "Other Mobile\nPhone OTT\nService"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -293,8 +306,22 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
-              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "12245de7-df3a-4d15-b4e9-0a8112a64c16",
+                  "title": "New generic threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "da die daten von der Telefonnummernauflösung nicht verschlüsselt wird, könnte Angreifer auf der NUmmer zugreifen und den OTT selber bekommen ",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 110,
+                  "score": ""
+                }
+              ],
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
@@ -1493,7 +1520,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "SIEM Report",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -1504,17 +1531,76 @@
               "hasOpenThreats": false,
               "threats": []
             },
-            "id": "7f44a396-7460-421d-a5b7-e24542c67d14",
+            "id": "ec8d1c8d-b45b-43ac-bc2e-6eac2e0eaef9",
             "source": {
-              "cell": "1b46e7bd-f09e-4b33-8d7a-fea01e26a0cb"
+              "x": 420,
+              "y": 170
             },
             "target": {
               "cell": "9dc1b164-a560-4b1d-a680-31647f40a3fb"
-            }
+            },
+            "labels": [
+              "SIEM Report"
+            ],
+            "vertices": [
+              {
+                "x": 400,
+                "y": 170
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "client data\nauf sd karte speichern",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "2fa56019-fa49-4228-980c-16f6cbed118c",
+            "source": {
+              "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
+            },
+            "target": {
+              "x": 230,
+              "y": -100
+            },
+            "vertices": [
+              {
+                "x": 270,
+                "y": -40
+              }
+            ],
+            "labels": [
+              "client data\nauf sd karte speichern"
+            ]
           },
           {
             "position": {
-              "x": 310,
+              "x": 308,
               "y": -240
             },
             "size": {
@@ -1554,11 +1640,11 @@
               "threats": [
                 {
                   "id": "1c84e97d-b5e0-4f90-89dc-167db606f5d0",
-                  "title": "New generic threat",
+                  "title": "#385",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "Ein Angreifer könnte versuchen, Daten in der DB zu ändern oder zu manupulieren, um beispielsweise Log info zu ändern oder löschen. Angriffsvektor: SQL INjection, Unsichere Datenübertragung",
+                  "description": "Ein Angreifer könnte versuchen, Daten in der DB zu ändern oder zu manupulieren, um beispielsweise Log info zu ändern oder löschen da die Rechten nicht klar definiert sind. Angriffsvektor: SQL INjection, Unsichere Datenübertragung",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -1681,8 +1767,8 @@
                 "text": "standard\n software für \nkryptologie"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1697,8 +1783,35 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
-              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "218ed3c5-b255-4962-9442-fbdfc6669a3c",
+                  "title": "New generic threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": true,
+                  "number": 0,
+                  "score": ""
+                },
+                {
+                  "id": "54a50127-cfc0-454c-8087-4c2046cc103a",
+                  "title": "New generic threa",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Ein Benutzer könnte die Verwendung eines OTT leugnen, was zu Schwierigkeiten bei der Nachverfolgung von Authentifizierungsvorgängen führen könnte.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 113,
+                  "score": ""
+                }
+              ],
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
@@ -1730,7 +1843,7 @@
             "id": "2a868587-6ca8-4f83-90cc-b3c9a5a59aea",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Export-\nProcess",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1760,7 +1873,7 @@
           {
             "position": {
               "x": 428,
-              "y": 180
+              "y": 140
             },
             "size": {
               "width": 60,
@@ -1861,8 +1974,8 @@
                 "text": "Signatur"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1877,8 +1990,81 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "9ea20e7e-2e7d-4a75-b16c-6842a83a569e",
+                  "title": "New generic threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Report daten könnte vor der signatur vom Angreifer gelesen werden",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 111,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 110,
+              "y": -163
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "SD karte"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "69c10b9f-5a66-4285-81b9-fdc629b9e00b",
+            "zIndex": 19,
+            "data": {
+              "type": "tm.Flow",
+              "name": "SD karte",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "9257a863-f856-4090-9a67-be25a33cbb5f",
+                  "title": "New generic threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Sensible Daten, die auf der SD-Karte gespeichert sind, könnten durch unbefugten Zugriff kompromittiert werden.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 115,
+                  "score": ""
+                }
+              ],
+              "isBidirectional": false,
+              "protocol": "",
+              "isPublicNetwork": false
             }
           }
         ],
@@ -1892,7 +2078,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 10,
-    "threatTop": 108
+    "threatTop": 117
   },
   "version": "2.1.1"
 }
