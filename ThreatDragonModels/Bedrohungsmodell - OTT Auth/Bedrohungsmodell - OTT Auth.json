@@ -20,8 +20,8 @@
         "cells": [
           {
             "position": {
-              "x": 12,
-              "y": 53
+              "x": -108,
+              "y": 39.00000000000006
             },
             "size": {
               "width": 160,
@@ -352,8 +352,8 @@
             },
             "vertices": [
               {
-                "x": 237,
-                "y": 39
+                "x": 117,
+                "y": 25.000000000000057
               }
             ]
           },
@@ -718,72 +718,6 @@
               {
                 "x": 342.5,
                 "y": 210
-              }
-            ]
-          },
-          {
-            "shape": "trust-broundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Externer Service für T\nelefonnummernauflö\nsung",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "8c690a8a-f100-4c4d-bd88-095a530ac220",
-            "labels": [
-              {
-                "position": {
-                  "distance": 0,
-                  "offset": 25.336937022630487
-                },
-                "attrs": {
-                  "label": {
-                    "text": "Firma Allsecure"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "x": 241,
-              "y": 135
-            },
-            "target": {
-              "x": 246,
-              "y": 138
-            },
-            "vertices": [
-              {
-                "x": 420,
-                "y": 440
-              },
-              {
-                "x": 780,
-                "y": 350
-              },
-              {
-                "x": 800,
-                "y": 180
-              },
-              {
-                "x": 720,
-                "y": -170
-              },
-              {
-                "x": 700,
-                "y": -360
-              },
-              {
-                "x": 200,
-                "y": -300
-              },
-              {
-                "x": 243,
-                "y": -8
               }
             ]
           },
@@ -1374,6 +1308,76 @@
             ]
           },
           {
+            "shape": "trust-broundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Externer Service für T\nelefonnummernauflö\nsung",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "8c690a8a-f100-4c4d-bd88-095a530ac220",
+            "labels": [
+              {
+                "position": {
+                  "distance": 0,
+                  "offset": 25.336937022630487
+                },
+                "attrs": {
+                  "label": {
+                    "text": "Firma Allsecure"
+                  }
+                }
+              }
+            ],
+            "source": {
+              "x": 130,
+              "y": 120
+            },
+            "target": {
+              "x": 130,
+              "y": 120
+            },
+            "vertices": [
+              {
+                "x": 180,
+                "y": 210
+              },
+              {
+                "x": 420,
+                "y": 440
+              },
+              {
+                "x": 780,
+                "y": 350
+              },
+              {
+                "x": 800,
+                "y": 180
+              },
+              {
+                "x": 720,
+                "y": -170
+              },
+              {
+                "x": 700,
+                "y": -360
+              },
+              {
+                "x": 200,
+                "y": -300
+              },
+              {
+                "x": 100,
+                "y": -30
+              }
+            ]
+          },
+          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -1409,15 +1413,15 @@
               "Report\nexport"
             ],
             "source": {
-              "cell": "c2716661-ef88-48a8-8d0f-724e1923d562"
+              "cell": "2a868587-6ca8-4f83-90cc-b3c9a5a59aea"
             },
             "target": {
-              "cell": "2a868587-6ca8-4f83-90cc-b3c9a5a59aea"
+              "cell": "9dc1b164-a560-4b1d-a680-31647f40a3fb"
             },
             "vertices": [
               {
-                "x": 510,
-                "y": -210
+                "x": 320,
+                "y": 220
               }
             ]
           },
@@ -1457,7 +1461,7 @@
               "signiert\nverschlüsselte \nReport"
             ],
             "source": {
-              "cell": "1b46e7bd-f09e-4b33-8d7a-fea01e26a0cb"
+              "cell": "9dc1b164-a560-4b1d-a680-31647f40a3fb"
             },
             "target": {
               "cell": "b8ccb7f1-1519-4d54-accf-f3f289dc0f45"
@@ -1468,6 +1472,45 @@
                 "y": 240
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "7f44a396-7460-421d-a5b7-e24542c67d14",
+            "source": {
+              "cell": "1b46e7bd-f09e-4b33-8d7a-fea01e26a0cb"
+            },
+            "target": {
+              "cell": "9dc1b164-a560-4b1d-a680-31647f40a3fb"
+            }
           },
           {
             "position": {
@@ -1664,8 +1707,8 @@
           },
           {
             "position": {
-              "x": 610,
-              "y": -270
+              "x": 230,
+              "y": 230
             },
             "size": {
               "width": 60,
@@ -1686,8 +1729,8 @@
             "zIndex": 15,
             "id": "2a868587-6ca8-4f83-90cc-b3c9a5a59aea",
             "data": {
-              "type": "tm.Process",
-              "name": "Export-\nProcess",
+              "type": "tm.Flow",
+              "name": "Data Flow",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1707,7 +1750,11 @@
                   "number": 108,
                   "score": ""
                 }
-              ]
+              ],
+              "isBidirectional": false,
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false
             }
           },
           {
@@ -1764,8 +1811,8 @@
           },
           {
             "position": {
-              "x": 35.75,
-              "y": 290
+              "x": -108,
+              "y": 330
             },
             "size": {
               "width": 112.5,
@@ -1787,7 +1834,7 @@
             "id": "b8ccb7f1-1519-4d54-accf-f3f289dc0f45",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Management",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1798,6 +1845,40 @@
               "protocol": "",
               "isEncrypted": false,
               "isPublicNetwork": false
+            }
+          },
+          {
+            "position": {
+              "x": 180,
+              "y": 140
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Signatur"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "9dc1b164-a560-4b1d-a680-31647f40a3fb",
+            "zIndex": 18,
+            "data": {
+              "type": "tm.Process",
+              "name": "Signatur",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
             }
           }
         ],
